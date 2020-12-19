@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  
+  <!-- <groups>
+ 	<run>
+ 		<exclude name="smoke"></exclude>
+ 		<include name="regression"></include>
+ 	</run>
+  </groups> -->
+  
+  <groups>
+  	<define name="all">
+  		<include name="smoke"></include>
+  		<include name="regression"></include>
+  	</define>
+  	
+  	<run>
+  	<include name="all"></include>
+  	</run>
+  </groups>
+  
+    <classes>
+      <class name="test.TestDependsOnMethod"/>
+      <class name="test.TestExecutionOrder"/>
+      <class name="test.TestInvocationCountParameter"/>
+      <class name="test.TestAlwaysRunParameter"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
