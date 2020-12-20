@@ -1,7 +1,6 @@
 package test;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
 
 public class TestExecutionOrder {
 	@Test(priority=1,groups= {"smoke"})

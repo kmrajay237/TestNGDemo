@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.TestAlwaysRunParameter">
+      <class name="test.TestAnnotationsLoactors">
         <methods>
-          <include name="register"/>
+          <include name="browserSetUp"/>
+          <include name="locatorsAnnotations"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- test.TestAlwaysRunParameter -->
+      </class> <!-- test.TestAnnotationsLoactors -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
